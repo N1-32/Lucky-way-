@@ -55,12 +55,18 @@ header{
     text-align: center;
     text-align: center;
     padding-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .welcome .box-container .box .image .img{
+    position: absolute ;
+    top: 0;
+    left: 1;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    vertical-align: middle;
 }
 .welcome .box-container .box .image:hover img {
     transform: scale(1.1);
@@ -74,3 +80,26 @@ header{
     font-size: 1.5rem;
     font-weight: 400;
 }
+section{
+    padding: 100px 2px 5px;
+    width: 1000px;
+    margin: 20px 6px;
+}
+section ul{
+    display: flex;
+    margin-bottom: 10px;
+}
+section ul li
+{
+    list-style: none;
+    background: #eee;
+    padding: 8px 30px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+section ul li.active{
+    background: #03a9f4;
+    color: #eee;
+}
+
