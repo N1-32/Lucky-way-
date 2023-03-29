@@ -44,42 +44,66 @@ header{
     background: #fff;
     color: #162938;
 }
-.welcome .box-container{
-    display: flex;
-    grid: 1.5em;
-}
-.welcome .box-container .box{
-    width: 33%;
-    background: var(--black);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    text-align: center;
-    padding-bottom: 1%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.welcome .box-container .box .image .img{
-    position: absolute ;
-    top: 0;
-    left: 1;
-    height: 100%;
+/*Menu*/
+.menu{
     width: 100%;
-    object-fit: cover;
-    vertical-align: middle;
+    padding: 50px 0;
 }
-.welcome .box-container .box .image:hover img {
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.menu .menu_box .menu_card{
+    color: #fff;
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
     transform: scale(1.1);
 }
-.welcome .box-container .box .content  {
-    padding: 2rem;
-    padding-top: 2rem;
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fff;
 }
-.welcome .box-container .box h3{
-    color: var(--light-color);
-    font-size: 1.5rem;
-    font-weight: 400;
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
 }
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 12px 20px;
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+/*filter*/
 section{
     padding: 100px 2px 5px;
     width: 1000px;
