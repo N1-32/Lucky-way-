@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
 }
 body{
     font-family: 'Cormorant SC', serif;
@@ -10,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../images/fon.jpg) ;
+    background-color: #162938;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,24 +20,18 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 99;
 }
-.logo{
-    font-size: 2em;
-    color: gold;
-    user-select: none;
-}
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-right: 40px;
 }
 .navigation a::after{
     content: "";
@@ -68,8 +61,8 @@ header{
     cursor: pointer;
     font-size: 1.1em;
     color: #fff;
+    margin-left: 600px;
     font-weight: 500;
-    margin-left: 40px;
     transition: .5s;
 }
 .navigation .btnLogin-popup:hover{
@@ -88,14 +81,15 @@ section{
     background-position: center;
 }
 .home .content{
+    font-family: 'Cormorant SC', serif;
     flex: 1 1 40rem;
     padding-top: 6.5rem;
 }
 .home .image{
-    flex: 1 1 40rem;
+    flex: 1 1 35rem;
 }
 .home .image img{
-    width: 90%;
+    width: 80%;
     left: 80vh;
     padding: 1rem;
     animation: float 3s linear infinite;
@@ -112,6 +106,7 @@ section{
     font-size: 5rem;
     color: #fff;
     padding: 1rem;
+}
 .btn{
     display: inline-block;
     padding: .8rem 3rem;
@@ -139,6 +134,3 @@ section{
     width: 100%;
     left: 0;
 }
-
-/*---------start page------*/
-
