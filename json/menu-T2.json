@@ -1,0 +1,194 @@
+[
+	{
+		"id" : "1",
+		"name" : "Піца грецька",
+		"price" : "210",
+		"filling" : "Соус маргарита, сир моцарела, фета,шпинат",
+		"imageUrl" : "https://budzzini.gazdagroup.com.ua/wp-content/uploads/2021/12/6319ED7F-B212-4DA1-BD86-EC20B70741DA-238x238.jpeg",
+		"restaurant_id" : 1
+	},
+	{
+		"id" : "2",
+		"name" : "Піца гавайська",
+		"price" : "200",
+		"filling" : "Соус, сир моцарела, помідор, ананас, курка гриль, бекон, кукурудза",
+		"imageUrl" : "https://budzzini.gazdagroup.com.ua/wp-content/uploads/2021/12/D10DCBE2-60D3-42F7-8E1D-1E64241BFCF7-238x238.jpeg",
+		"restaurant_id" : 1
+	},
+	{
+		"id" : "3",
+		"name" : "Піца барбекю",
+		"price" : "205",
+		"filling" : "Соус маргарита, сир моцарела, філе куряче, шпондер, синя цибуля",
+		"imageUrl" : "https://budzzini.gazdagroup.com.ua/wp-content/uploads/2021/12/E9B9F8A5-9EB2-4F26-9611-5AF48ABC0DCD-238x238.jpeg",
+		"restaurant_id" : 1
+	},
+	{
+		"id" : "4",
+		"name" : "Піца гуцульська",
+		"price" : "205",
+		"filling" : "Соус маргарита, сир моцарела, шпондер, мисливські ковбаски, перець чілі, кукурудза, листя салату",
+		"imageUrl" : "https://budzzini.gazdagroup.com.ua/wp-content/uploads/2021/12/F114ABDF-4559-4D91-B84E-948D56C907AC-238x238.jpeg",
+		"restaurant_id" : 1
+	},
+	{
+		"id" : "5",
+		"name" : "Боксмайстер гострий",
+		"price" : "143",
+		"filling" : "Соковите куряче філе в гострій хрусткій паніровці, рум'яний картопляник, скибочка сиру, маринованi огiрки, соус, загорнутi у гарячу тортілью – динамічно та смачно",
+		"imageUrl" : "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/szofthvmvdkdnqyfgfih",
+		"restaurant_id" : 2
+	},
+	{
+		"id" : "6",
+		"name" : "Твістер барбекю гострий",
+		"price" : "99",
+		"filling" : "Шматочки курячого філе в гострiй паніровці, сир, мариновані огірки з барбекю та майонезним соусом загорнуті в гарячу тортілью",
+		"imageUrl" : "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/spnrouw8kobqo89jhipu",
+		"restaurant_id" : 2
+	},
+	{
+		"id" : "7",
+		"name" : "Чікен Бургер",
+		"price" : "88",
+		"filling" : "Соус «Гамбургер, філе в гострій паніровці, мариновані огірки на пшеничній булочці з чорно-білим кунжутом",
+		"imageUrl" : "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ztqenae7pylz5xiiv7ml",
+		"restaurant_id" : 2
+	},
+	{
+		"id" : "8",
+		"name" : "Чізбургер Джуніор",
+		"price" : "61",
+		"filling" : "Пряний гірчичний соус, кетчуп, стріпс оригінальний, сир Чеддер, огірки на пшеничній булочці",
+		"imageUrl" : "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/letws6ntjgvphaqjuqu6",
+		"restaurant_id" : 2
+	},
+	{
+		"id" : "9",
+		"name" : "Борщ по-домашньому з м'ясом",
+		"price" : "56",
+		"filling" : "-",
+		"imageUrl" : "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/0af2ca6a-431a-4323-99dd-b379dc181daf-thumbnail-400x400-100.jpg",
+		"restaurant_id" : 3
+	},
+	{
+		"id" : "10",
+		"name" : "Солянка м'ясна",
+		"price" : "42",
+		"filling" : "-",
+		"imageUrl" : "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/989b6d9c-5f21-4d59-9522-bad299b22467-thumbnail-400x400-100.jpg",
+		"restaurant_id" : 3
+	},
+	{
+		"id" : "11",
+		"name" : "Биточок з курки в сирі",
+		"price" : "62",
+		"filling" : "-",
+		"imageUrl" : "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/16f7107e-931d-4501-8d4b-a579614546ad-thumbnail-400x400-100.jpg",
+		"restaurant_id" : 3
+	},
+	{
+		"id" : "12",
+		"name" : "Котлета рибна парова з лососем",
+		"price" : "60",
+		"filling" : "-",
+		"imageUrl" : "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/5257d92d-bcfd-4562-9b1a-98e8e1cdbf3d-thumbnail-400x400-100.jpg",
+		"restaurant_id" : 3
+	},
+	{
+		"id" : "13",
+		"name" : "Круасан чізбургер",
+		"price" : "109",
+		"filling" : "круасан, яловича котлета, сир тостовий, салат айсберг, помідор, квашений огірок, цибуля сушена, соус гострий, соус бургерний",
+		"imageUrl" : "https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2022/06/chiz-1.png",
+		"restaurant_id" : 4
+	},
+	{
+		"id" : "14",
+		"name" : "Круасан галицький",
+		"price" : "79",
+		"filling" : "круасан, огірок,помідор, курка, гриби, салат, соус гірчичний",
+		"imageUrl" : "https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2021/12/Galytskyj.png",
+		"restaurant_id" : 4
+	},
+	{
+		"id" : "15",
+		"name" : "Круасан амстердам",
+		"price" : "89",
+		"filling" : "круасан, оселедець, сир моцарела, помідор, салат, соус песто, соус часниковий",
+		"imageUrl" : "https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2021/12/Amsterdam.png",
+		"restaurant_id" : 4
+	},
+	{
+		"id" : "16",
+		"name" : "Круасан з яловичино",
+		"price" : " 95",
+		"filling" : "круасан,яловичина, салат айсберг, помідор, соус цезар",
+		"imageUrl" : "https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2021/12/BIF.png",
+		"restaurant_id" : 4
+	},
+	{
+		"id" : "17",
+		"name" : "Стейк з медальйонів телятини",
+		"price" : "380",
+		"filling" : "Тонко нарізані м'ясні шматочки з теляти, запечені на грилі, подаються з печеною картоплею та овочами",
+		"imageUrl" : "-",
+		"restaurant_id" : 5
+	},
+	{
+		"id" : "18",
+		"name" : "Салат з манго та авокадо",
+		"price" : "220",
+		"filling" : "Суміш свіжих овочів та фруктів, заправлена лимонним соусом",
+		"imageUrl" : "-",
+		"restaurant_id" : 5
+	},
+	{
+		"id" : "19",
+		"name" : "Томатний крем-суп з базиліком",
+		"price" : "120",
+		"filling" : "Ніжний крем-суп з томатів та свіжого базиліку, прикрашений гарячими крутонами",
+		"imageUrl" : "-",
+		"restaurant_id" : 5
+	},
+	{
+		"id" : "20",
+		"name" : "Моцарела фрі",
+		"price" : "165",
+		"filling" : "Містить яйця,Містить молочні продукти",
+		"imageUrl" : "-",
+		"restaurant_id" : 5
+	},
+	{
+		"id" : "21",
+		"name" : "Пструг грильований з овочами",
+		"price" : "390",
+		"filling" : "пструг річковий, засмажений з  овочами (цибуля золота (бо вартує вже як золото), перець солодкий, кабачок, морква)",
+		"imageUrl" : "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-lyalya/menu/thumbnail_DORfWgb-unVoEvf-DuPVHkQ_H-C-H.jpeg",
+		"restaurant_id" : 6
+	},
+	{
+		"id" : "22",
+		"name" : "Грильовані ребра з карамелізованим чілі",
+		"price" : "350",
+		"filling" : "півкіло  ребер, засмажених на грилі с карамелізованим чілі",
+		"imageUrl" : "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-lyalya/menu/thumbnail_MCrCiRO-IEBCkbq-uQOaQEe_g-Y-J.jpeg",
+		"restaurant_id" : 6
+	},
+	{
+		"id" : "23",
+		"name" : "Пеновані з дорблю та лісовим медом",
+		"price" : "155",
+		"filling" : "хрустке тісто з міксом сиру (сулугуні, бринза, домашній сир, дорблю) та з лісовим медом",
+		"imageUrl" : "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-lyalya/menu/thumbnail_kHELCpD-SbMzNuU-jhVAmiJ_d-J-c.jpeg",
+		"restaurant_id" : 6
+	},
+	{
+		"id" : "24",
+		"name" : "Грузинське асорті",
+		"price" : "260",
+		"filling" : "(гострий червоний перець з шором, цицак з горіховою пастою, рулети баклажанів з горіховою пастою, рулети кабачків з шором та в'яленим томатом)",
+		"imageUrl" : "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-lyalya/menu/thumbnail_GDHQyGu-JZCVOW-eMPchvB_z-x-L.jpeg",
+		"restaurant_id" : 6
+	}
+]

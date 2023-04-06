@@ -1,0 +1,32 @@
+[
+	{
+		"id" : "1",
+		"name" : "Фаст-фуд",
+		"restaurant_id" : null
+	},
+	{
+		"id" : "2",
+		"name" : "Піца",
+		"restaurant_id" : null
+	},
+	{
+		"id" : "3",
+		"name" : "Круасани",
+		"restaurant_id" : null
+	},
+	{
+		"id" : "4",
+		"name" : "Бранч",
+		"restaurant_id" : null
+	},
+	{
+		"id" : "5",
+		"name" : "Суші",
+		"restaurant_id" : null
+	},
+	{
+		"id" : "6",
+		"name" : "Десерт",
+		"restaurant_id" : null
+	}
+]
