@@ -46,6 +46,7 @@ header{
 }
 /*Menu*/
 .menu{
+    border-radius: 50px ;
     width: 100%;
     padding: 50px 0;
 }
@@ -69,6 +70,7 @@ header{
     height: 245px;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 50px ;
 }
 .menu .menu_box .menu_card .menu_image img{
     width: 100%;
@@ -112,6 +114,7 @@ section{
 section ul{
     display: flex;
     margin-bottom: 10px;
+    border-radius: 50px ;
 }
 section ul li
 {
@@ -121,9 +124,71 @@ section ul li
     margin: 5px;
     letter-spacing: 1px;
     cursor: pointer;
+    border-radius: 50px ;
 }
 section ul li.active{
     background: #03a9f4;
     color: #eee;
 }
+/*--search--*/
+.header-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 9%;
+    border-radius: 50px ;
+}
+.header-1 .search-box-container{
+    margin-top: 100px;
+    display: flex;
+    height: 2rem;
+    border-radius: 50px ;
+}
+.header-1 .search-box-container #search-box{
+    height: 100%;
+    width: 100%;
+    padding: 17px;
+    color: #333;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+    border-radius: 50px ;
+}
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+}
+.placeholder .header-1 .search-box-container #search-box{
+    font-size: large;
+}
+.header-1 .search-box-container .span
+{
+    right: inherit;
+}
+.header-1 .search-box-container label{
+    height: 100%;
+    width: 8rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: #fff;
+    background: var(--green);
+    text-align: center;
+    cursor: pointer;
+    
+    border-radius: 50px ;
+}
+.header-1 .search-box-container label:hover{
+    background: var(--black);
+}
+.header-1 .search-box-container label .material-symbols-outlined{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-2 .btn-popup{
+    display: flex;
+    padding: 1rem;
+}
+
+
 
