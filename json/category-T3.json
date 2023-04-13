@@ -1,32 +1,42 @@
 [
 	{
 		"id" : "1",
-		"name" : "Фаст-фуд",
-		"restaurant_id" : null
+		"name" : "Десерт",
+		"restaurant_id" : -
 	},
 	{
 		"id" : "2",
-		"name" : "Піца",
-		"restaurant_id" : null
+		"name" : "Грузинська кухня",
+		"restaurant_id" : -
 	},
 	{
 		"id" : "3",
-		"name" : "Круасани",
-		"restaurant_id" : null
+		"name" : "Українська кухня",
+		"restaurant_id" : -
 	},
 	{
 		"id" : "4",
-		"name" : "Бранч",
-		"restaurant_id" : null
+		"name" : "Італійська кухня",
+		"restaurant_id" : -
 	},
 	{
 		"id" : "5",
-		"name" : "Суші",
-		"restaurant_id" : null
+		"name" : "Веганьська кухня",
+		"restaurant_id" : -
 	},
 	{
 		"id" : "6",
-		"name" : "Десерт",
-		"restaurant_id" : null
+		"name" : "Європейська кухня",
+		"restaurant_id" : -
+	},
+	{
+		"id" : "7",
+		"name" : "Японська кухня",
+		"restaurant_id" : -
+	},
+	{
+		"id" : "8",
+		"name" : "Американська кухня",
+		"restaurant_id" : -
 	}
 ]

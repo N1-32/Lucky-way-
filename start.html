@@ -44,14 +44,14 @@
      <section>
         <ul>
             <li class="list active" data-filter="Все">Все</li>
-            <li class="list" data-filter="Грузинська кухня">Грузинська кухня</li>
-            <li class="list" data-filter="Українська кухня">Українська кухня</li>
-            <li class="list" data-filter="Італійська кухня">Італійська кухня</li>
-            <li class="list" data-filter="Веганська кухня">Веганська кухня</li>
-            <li class="list" data-filter="Європейська кухня">Європейська кухня</li>
-            <li class="list" data-filter="Японська кухня">Японська кухня</li>
-            <li class="list" data-filter="Американська кухня">Американська кухня</li>
-             <li class="list" data-filter="Десерт">десерт</li>
+            <li class="list" data-filter="Грузинська кухня" data-category="2" onclick="filterRestaurantByCategoryId(this)">Грузинська кухня</li>
+            <li class="list" data-filter="Українська кухня" data-category="3" onclick="filterRestaurantByCategoryId(this)">Українська кухня</li>
+            <li class="list" data-filter="Італійська кухня" data-category="4" onclick="filterRestaurantByCategoryId(this)">Італійська кухня</li>
+            <li class="list" data-filter="Веганська кухня" data-category="5" onclick="filterRestaurantByCategoryId(this)">Веганська кухня</li>
+            <li class="list" data-filter="Європейська кухня" data-category="6" onclick="filterRestaurantByCategoryId(this)">Європейська кухня</li>
+            <li class="list" data-filter="Японська кухня" data-category="7" onclick="filterRestaurantByCategoryId(this)">Японська кухня</li>
+            <li class="list" data-filter="Американська кухня"data-category="8" onclick="filterRestaurantByCategoryId(this)">Американська кухня</li>
+             <li class="list" data-filter="Десерт" data-category="1" onclick="filterRestaurantByCategoryId(this)">десерт</li>
         </ul>
      </section>
     <!--Menu-->
@@ -286,6 +286,8 @@
      
      </div>
      </div>
+     <script type="text/javascript" src="https://unpkg.com/geolib@2.0.24/dist/geolib.js"></script>
+     <script type='text/javascript' src='../scripts/index.js'></script>
          <script>
          </script>
 </body>

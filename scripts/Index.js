@@ -22,14 +22,6 @@ fetchJSONFile(json_category_path, function(data)
         console.log("Data loaded!");
     });
 
-
-console.log("1. Call getRestaurantNames() to see a restaurant names;");
-console.log("2. Call getRestaurant(number) to see a restaurant by its number in a list;");
-console.log("3. Call getRestaurantMenu(number) to see a restaurant menu by restaurant number in a list;");
-console.log("4. Call searchRestaurants(searchString) to search a restaurants by name;");
-console.log("5. Call getDistanceToRestaurant(number, lat, long) to get a distance between a restaurant (by number) and your coordinates;");
-console.log("example: getDistanceToRestaurant(2, 49.839781824666304, 24.022373858866388); (KFC та Тролейбусна зупинка 'Університет' (Франка))");
-
 function fetchJSONFile(path, callback) {
    var httpRequest = new XMLHttpRequest();
    httpRequest.onreadystatechange = function() {
@@ -45,44 +37,21 @@ function fetchJSONFile(path, callback) {
    httpRequest.send(); 
 }
 
-function getRestaurantNames() {
-   let names = [];
-   for (let i = 0; i < window.restaurants.length; i++) 
-   {
-       names[i] = window.restaurants[i].name;
-   }
-   return names;
-}
-
-function getRestaurant(number) {
-   return restaurants[number-1];
-}
-
-function getRestaurantMenu(number) {
-   let menu = [];
-   for(let i = 0; i < window.restaurants[number-1].menu.length; i++)
-   {
-      menu[i] = window.restaurants[number-1].menu[i].name;
-   }
-   return menu;
-}
-
-function searchRestaurants(searchString){
-   return window.restaurants.filter(function (value, index, array){
-      return value.name.toLowerCase().includes(searchString.toLowerCase());
-   });
-}
-
-function getDistanceToRestaurant(number, lat, long){
-   let restaurant = window.restaurants[number-1];
-   return geolib.getDistance(
-      { latitude: restaurant.location.latitude, longitude: restaurant.location.longitude },
-      { latitude: lat, longitude: long }
-  );
-}
-
 function getRestaurantByCategoryId(category_id){
    return window.restaurants.filter(function (value, index, array){
       return value.category_id == category_id;
    });
+}
+
+function filterRestaurantByCategoryId(data){
+    let categoryId = data.getAttribute("data-category");
+    let restaurants = getRestaurantByCategoryId(categoryId);
+    let names = "";
+
+    for (let i = 0; i < restaurants.length; i++) 
+    {
+       names = names + restaurants[i].name+";";
+    }
+
+    alert("restaurants:" + names);    
 }
