@@ -44,14 +44,38 @@ function getRestaurantByCategoryId(category_id){
 }
 
 function filterRestaurantByCategoryId(data){
-    let categoryId = data.getAttribute("data-category");
-    let restaurants = getRestaurantByCategoryId(categoryId);
-    let names = "";
+    window.filterCategoryId = data.getAttribute("data-category");
+    
+    const elements = document.querySelectorAll('.list.active');
+    elements.forEach((element) => {
+        element.classList.remove('active');
+    });
 
-    for (let i = 0; i < restaurants.length; i++) 
-    {
-       names = names + restaurants[i].name+";";
+    data.classList.add('active');
+
+    return searchRestaurants();
+}
+
+function searchRestaurants(){
+    let searchString = document.getElementById("search-box").value;
+
+    let result = [];
+    if(!window.filterCategoryId) {
+        result = window.restaurants;
+    }
+    else {
+        result = getRestaurantByCategoryId(window.filterCategoryId);
     }
 
-    alert("restaurants:" + names);    
+    if(!searchString){
+        console.log(result);
+        return result;
+    }
+
+    result = result.filter(function (value, index, array){
+      return value.name.toLowerCase().includes(searchString.toLowerCase());
+    });
+
+   console.log(result);
+   return result;
 }

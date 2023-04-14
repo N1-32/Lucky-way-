@@ -37,13 +37,13 @@
         <div class="header-1">
         <form action="" class="search-box-container">
             <input type="search" id="search-box" placeholder="Шукай тут...">
-            <label for="search-box" class="fas fa-search"></label>
+            <label for="search-box" class="fas fa-search" onclick="searchRestaurants(this)"></label>
         </form>
         </div>
      </header1>
      <section>
         <ul>
-            <li class="list active" data-filter="Все">Все</li>
+            <li class="list active" data-filter="Все" onclick="filterRestaurantByCategoryId(this)">Все</li>
             <li class="list" data-filter="Грузинська кухня" data-category="2" onclick="filterRestaurantByCategoryId(this)">Грузинська кухня</li>
             <li class="list" data-filter="Українська кухня" data-category="3" onclick="filterRestaurantByCategoryId(this)">Українська кухня</li>
             <li class="list" data-filter="Італійська кухня" data-category="4" onclick="filterRestaurantByCategoryId(this)">Італійська кухня</li>
@@ -51,7 +51,7 @@
             <li class="list" data-filter="Європейська кухня" data-category="6" onclick="filterRestaurantByCategoryId(this)">Європейська кухня</li>
             <li class="list" data-filter="Японська кухня" data-category="7" onclick="filterRestaurantByCategoryId(this)">Японська кухня</li>
             <li class="list" data-filter="Американська кухня"data-category="8" onclick="filterRestaurantByCategoryId(this)">Американська кухня</li>
-             <li class="list" data-filter="Десерт" data-category="1" onclick="filterRestaurantByCategoryId(this)">десерт</li>
+            <li class="list" data-filter="Десерт" data-category="1" onclick="filterRestaurantByCategoryId(this)">десерт</li>
         </ul>
      </section>
     <!--Menu-->
@@ -88,7 +88,7 @@
                     <img src="images/puzata hata.jpg">
                 </div>
                 <div class="menu_info">
-                    <h2>Пузата хата</h2>
+                    <h2>KFC</h2>
                     <p>пр.Шевченка,10</p>
                    <p>Робочий час:</p>
                    <p>08:00 - 23:00</p>
