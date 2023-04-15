@@ -5,8 +5,9 @@
     font-family: "poppins", sans-serif;
 }
 .logo{
-    font-size: 2em;
-    color: gold;
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: #fff;
     user-select: none;
 }
 header{
@@ -15,7 +16,6 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
