@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.logo{
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: #fff;
+    user-select: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+.about-col{
+    
+    color: #fff;
+    text-align: left;
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+section{
+    padding: 40px;
+    padding: 20px 2px 5px;
+    width: 1000px;
+    margin: 20px 6px;
+}
+section ul{
+    flex-wrap: wrap;
+    padding: 100px;
+    padding-left: 40px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 50px ;
+}
+section ul li
+{
+    
+    border-radius: 50px ;
+    list-style: none;
+    background: #eee;
+    padding: 8px 30px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+section ul li.active{
+    background: #fff;
+    color: black;
+}
