@@ -1,132 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    font-family: 'Cormorant SC', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    margin: 0;
+    
+    font-family: 'Marmelad', sans-serif;
     background-color:  rgba(5, 40, 54, 1);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 99;
-}
-.navigation a {
-    position: relative;
-    font-size: 1.3em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-right: 40px;
-}
-.navigation a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: orange;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-.navigation a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.navigation .btnLogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    margin-left: 600px;
-    font-weight: 500;
-    transition: .5s;
-}
-.navigation .btnLogin-popup:hover{
-    background: #fff;
-    color: #162938;
-}
-section{
-    padding: 2rem 9%;
-}
-.home{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    min-height: 100vh;
-    align-items: center;
-    background-position: center;
-}
-.home .content{
+p{
     font-family: 'Cormorant SC', serif;
-    flex: 1 1 40rem;
-    padding-top: 6.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
+    width: 223px;
+    font-size: 85px;
+    text-align: center;
 }
-.home .image{
-    flex: 1 1 35rem;
+.container{
+    justify-content: space-between;
+    display:inline-flex;
+
 }
-.home .image img{
-    width: 80%;
-    left: 80vh;
-    padding: 1rem;
+.offer img{
+    padding-left: 715px;
+    padding-top: 125px;
 }
-@keyframes float{
-    0%,100%{
-        transform: translateY(0rem);
-    }
-    50%{
-        transform: translateY(3rem);
-    }
+.offer{
+    position: absolute;
+    width: 594,5px;
+    height: 470px;
+    left: 56px;
+    top: 67px;
 }
-.home .content h3{
-    font-size: 5rem;
-    color: #fff;
-    padding: 1rem;
+.offer-wrapper{
+    position: absolute;
+    width: 323px;
+    height: 350px;
+    left: calc(50% - 323px/2 - 277.5px);
+    bottom: 200px;
+    color: #FFFFFF;
 }
 .btn{
-    display: inline-block;
-    padding: .8rem 3rem;
-    border: .2rem solid #fff;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    margin-top: 3rem;
-}
-.btn::before{
-    content: "";
+    color: aliceblue;
+    text-decoration: none;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    padding-top: 4px;
+    padding-right: 80px;
+    padding-left: 80px;
+ 
+
+    box-sizing: border-box;
+
     position: absolute;
-    top: 0; right: 0;
-    width: 0%;
-    height: 100%;
-    background: #fff;
-    transition: .3s linear;
-    z-index: -1;
+    width: 272px;
+    height: 53px;
+    left: 261px;
+    top: 550px;
+    background: rgba(217, 217, 217, 0.16);
+    border: 2px solid #FFFFFF;
+    box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.57);
+    border-radius: 20px;
+    margin-left: 10px;
+
 }
+.classmeit{
+    position: absolute;
+    color: #ffffff;
+    width: 925px;
+    height: 0px;
+    left: 119px;
+    top: 50px;
+    box-shadow: 0px 2px 5px 0px rgba(217, 217, 217, 1);
+    border: 1px solid #FFFFFF;
+}
+
+.navbar{
+    width: 100%;
+    height: 80%;
+    margin-top: 1px;
+    
+    
+}
+
+.navbar-wrap{
+    padding-left: 350px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar-wrap li a{
+    padding-right: 75px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
