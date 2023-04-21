@@ -3,539 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Lucky Way</title>
-    <link rel="stylesheet" href="css/start.css">
-    
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacky way</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Marmelad&display=swap" rel="stylesheet">
-
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/start.css">
 </head>
-<body style="background-color: #162938;">
-    <header>
-        <h2 class="logo">Lucky Way</h2>
-        <div class="row">
-            <div class="about-col">
-                <h1>----------------------------------Каталог----------------------------------</h1>
+
+
+<body>
+   <header class="header" id="header">
+        <div class="navbar">
+            <ul class="navbar-wrap">
+            <li><a class="off" href="index.html"><img src="🦆 icon _nav arrow left_.png"><p>LACKY WAY</p></a></li>
+            <p>Каталог</p>  
+        <header1>
+            <div class="header-1">
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="Шукай тут...">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
             </div>
-        </div>
-        <nav class="navigation">
+         </header1>
+        <section>
             <ul>
-                <button class="btnLogin-popup">Login</button>
+                <li class="list" data-filter="Все">Все</li>
+                <li class="list" data-filter="Грузинська кухня">Грузинська кухня</li>
+                <li class="list" data-filter="Українська кухня">Українська кухня</li>
+                <li class="list" data-filter="Італійська кухня">Італійська кухня</li>
+                <li class="list" data-filter="Веганська кухня">Веганська кухня</li>
+                <li class="list" data-filter="Європейська кухня">Європейська кухня</li>
+                <li class="list" data-filter="Японська кухня">Японська кухня</li>
+                <li class="list" data-filter="Американська кухня">Американська кухня</li>
+                 <li class="list" data-filter="Десерт">десерт</li>
             </ul>
-        </nav>
-     </header>
-     <!-----------ресторани----->
-    
-     <header1>
-        <div class="header-1">
-        <form action="" class="search-box-container">
-            <input type="search" id="search-box" placeholder="Шукай тут...">
-            <label for="search-box" class="fas fa-search" onclick="searchRestaurants(this)"></label>
-        </form>
-        </div>
-     </header1>
-     <section>
-        <ul>
-            <li class="list active" data-filter="Все" onclick="filterRestaurantByCategoryId(this)">Все</li>
-            <li class="list" data-filter="Грузинська кухня" data-category="2" onclick="filterRestaurantByCategoryId(this)">Грузинська кухня</li>
-            <li class="list" data-filter="Українська кухня" data-category="3" onclick="filterRestaurantByCategoryId(this)">Українська кухня</li>
-            <li class="list" data-filter="Італійська кухня" data-category="4" onclick="filterRestaurantByCategoryId(this)">Італійська кухня</li>
-            <li class="list" data-filter="Веганська кухня" data-category="5" onclick="filterRestaurantByCategoryId(this)">Веганська кухня</li>
-            <li class="list" data-filter="Європейська кухня" data-category="6" onclick="filterRestaurantByCategoryId(this)">Європейська кухня</li>
-            <li class="list" data-filter="Японська кухня" data-category="7" onclick="filterRestaurantByCategoryId(this)">Японська кухня</li>
-            <li class="list" data-filter="Американська кухня"data-category="8" onclick="filterRestaurantByCategoryId(this)">Американська кухня</li>
-            <li class="list" data-filter="Десерт" data-category="1" onclick="filterRestaurantByCategoryId(this)">десерт</li>
-        </ul>
-     </section>
-    <!--Menu-->
-     <div class="menu" id="Menu">
-        <div class="menu_box">
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/KFC.jpg">
+         </section>
+       
+        <div class="container">  
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            пр. Свободи,19. Робочий час: 08:00-22:00
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>KFC</h2>
-                    <p>пр.Свободи,19</p>
-                   <p>Робочий час:</p>
-                   <p>08:00 - 22:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/Lijalia.jpg">
+                        <div class="card-title">Ляля</div>
+                        <div class="card-sub">
+                            вул.Словацького, 16. Робочий час: 11:00-22:00
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Lijalia.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/puzata hata.jpg">
+                        <div class="card-title">Пузата хата</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>Ляля</h2>
-                    <p>вул.Словацького,16</p>
-                   <p>Робочий час:</p>
-                   <p>11:00 - 22:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/">
+                        <div class="card-title">36По</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/puzata hata.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/">
+                        <div class="card-title">Budzzini</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>Пузата хата</h2>
-                    <p>пр.Шевченка,10</p>
-                   <p>Робочий час:</p>
-                   <p>08:00 - 23:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/">
+                        <div class="card-title">Lviv Croissants</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/35po.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/">
+                        <div class="card-title"></div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>36По</h2>
-                    <p>пр.Ринок,36</p>
-                   <p>Робочий час:</p>
-                   <p>12:00 - 24:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/">
+                        <div class="card-title"></div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Budzzini.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/" >
+                        <div class="card-title">On Nom Nom</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>Budzzini</h2>
-                    <p>вул.Дорошенка,8</p>
-                   <p>Робочий час:</p>
-                   <p>09:00 - 18:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Lviv croissants.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>Lviv Croissants</h2>
-                    <p>вул.Князя Романа,18</p>
-                   <p>Робочий час:</p>
-                   <p>24/7</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/TRDLO.jpg">
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-                <div class="menu_info">
-                    <h2>TRDLO</h2>
-                    <p>вул. Ставропігійська,5</p>
-                   <p>Робочий час:</p>
-                   <p>11:00-21:30</p>
-                   <a href="#" class="menu_btn">Перейти</a>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
                 </div>
-            </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <img class="card-img" src="images/KFC.jpg">
+                        <div class="card-title">KFC</div>
+                        <div class="card-sub">
+                            вул. Князя Романа, 18. Робочий час: Цілодобово
+                        </div>
+                        
+                        <a href="#" class="menu_btn">Перейти</a>
+                    </div>
+                </div>
             
-             <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Mameroni</h2>
-                    <p>вул.Братів Рогатинців,4</p>
-                   <p>Робочий час:</p>
-                   <p>11:00-23:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/On nom nom.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>On Nom Nom</h2>
-                    <p>вул. Румлянина,10</p>
-                   <p>Робочий час:</p>
-                   <p>09:00-22:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/psturh.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>Пстург, хліб та вино</h2>
-                    <p>вул.Братів Рогатинців,49</p>
-                   <p>Робочий час:</p>
-                   <p>11:00-24:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Грузинський</h2>
-                    <p>вул.Павла Ковжуна,2</p>
-                   <p>Робочий час:</p>
-                   <p>12:00-23:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Kebab house на мангал</h2>
-                    <p>вул.Князя Романа,2</p>
-                   <p>Робочий час:</p>
-                   <p>09:30-23:30</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/ЦіKaVa.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>ЦіKaVa</h2>
-                    <p>вул.Личаківська,86</p>
-                   <p>Робочий час:</p>
-                   <p>09:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Cukor red.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>Cukor red</h2>
-                    <p>вул. Крива липа,3</p>
-                   <p>Робочий час:</p>
-                   <p>08:30-19:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Chin Chin</h2>
-                    <p>вул.Т.Костюшки,2</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/SIM porosijat.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>Сім поросят</h2>
-                    <p>вул.Степана Бандери,9</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-22:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Edonismo.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>Edonismo</h2>
-                    <p>вул.Лесі Українки,29</p>
-                   <p>Робочий час:</p>
-                   <p>09:00-22:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/Gelateria.jpg">
-                </div>
-                <div class="menu_info">
-                    <h2>Gelateria</h2>
-                    <p>вул.Словацького,16</p>
-                   <p>Робочий час:</p>
-                   <p>09:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-             <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Marble bar</h2>
-                    <p>вул.Братів Рогатинців,22</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-             <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Sowa cafe</h2>
-                    <p>вул.Староєврейська,40</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>EPIC CHICKEN</h2>
-                    <p>вул.Миколи Вороного,3</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-23:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Cheveni</h2>
-                    <p>вул.Липинського,36</p>
-                   <p>Робочий час:</p>
-                   <p>11:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Da Vinci</h2>
-                    <p>проспект Свободи,22</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Голодний Микола</h2>
-                    <p>вул.Стрийська,352</p>
-                   <p>Робочий час:</p>
-                   <p>12:00-24:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2>Хінкальня на Кривій Липі</h2>
-                    <p>вул.Братів Рогатинців,22</p>
-                   <p>Робочий час:</p>
-                   <p>10:00-21:00</p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-            
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/">
-                </div>
-                <div class="menu_info">
-                    <h2></h2>
-                    <p></p>
-                   <p>Робочий час:</p>
-                   <p></p>
-                   <a href="#" class="menu_btn">Перейти</a>
-                </div>
-            </div>
-
-
-
-            </div>
-        </div>
-     </div>
-     
-     </div>
-     </div>
-     <script type="text/javascript" src="https://unpkg.com/geolib@2.0.24/dist/geolib.js"></script>
-     <script type='text/javascript' src='../scripts/index.js'></script>
-         <script>
-         </script>
+            </div>     
+   </header>  
 </body>
 </html>
