@@ -1,134 +1,161 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Marmelad', sans-serif;
+    background-color:  rgba(5, 40, 54, 1);
 }
-.logo{
-    font-family: 'EB Garamond', serif;
-    font-size: 3rem;
-    color: #fff;
-    user-select: none;
+.container{
+    justify-content: space-between;
+    display:inline-flex;
+    flex-wrap: wrap;
+
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 99;
+p{
+    position: absolute;
+    width: 120px;
+    height: 25px;
+    left: 540px;
+    margin: 1px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 123.52%;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);                          
 }
-.about-col{
+.offer{
+    position: absolute;
+    width: 781px;
+    height: 1.07px;
+    left: 140px;
+    top: 20px;
+    padding-left: 50px;
+}
+.img{
+    position: absolute;
+    width: 1206px;
+    height: 55px;
+    left: -1px;
+    top: 2px;
+}
+.shadow{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+.navbar-wrap li{
+    position: absolute;
+    width: 122px;
+    height: 45px;
+    left: 30px;
+    top: 10px;
+    list-style-type: none;
     
-    color: #fff;
-    text-align: left;
 }
-.navigation .btnLogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
+.icon{
+    padding-left: 970px;
+    width: 24px;
+    height: 24px;
+    
 }
-.navigation .btnLogin-popup:hover{
-    background: #fff;
-    color: #162938;
-}
-/*Menu*/
-.menu{
-    border-radius: 50px ;
-    width: 100%;
-    padding: 50px 0;
-}
-.menu .menu_box{
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
-}
-.menu .menu_box .menu_card{
-    color: #fff;
-    width: 325px;
-    height: 480px;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}
-.menu .menu_box .menu_card .menu_image{
-    width: 300px;
-    height: 245px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 50px ;
-}
-.menu .menu_box .menu_card .menu_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.3s;
-}
-.menu .menu_box .menu_card .menu_image:hover img{
-    transform: scale(1.1);
-}
-.menu .menu_box .menu_card .menu_info h2{
-    width: 60%;
+.navbar-wrap li p{
+    font-family: 'Cormorant SC', serif;
+    width: 96px;
+    font-size: 21px;
     text-align: center;
-    margin: 10px auto 10px auto;
-    font-size: 25px;
-    color: #fff;
+    left: 12px;
+    bottom: 7px;
+    
 }
-.menu .menu_box .menu_card .menu_info p{
+.navbar-wrap li a{
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    left: 1px;
+    top: 10px;
+}
+.card{
+    background: #1E1E1E;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 23px;
+    width: 160px;
+    height: 304px;
+    display: block;
+}
+.card-img{
+    width: 160px;
+}
+.card-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 123.52%;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    width: 160px;
+    margin: 0 auto;
+}
+.card-sub{
+    padding-left: 1px;
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 12px;  
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+}
+
+.wrapper{
+    width: 160px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    
+    display: inline-flex;
+    text-align: center;
     text-align: center;
     margin-top: 8px;
     line-height: 21px;
 }
-.menu .menu_box .menu_card .menu_info .menu_btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.container{
+    display: contents;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.list{
+    color: aliceblue;
+    width: 110px;
+    display: inline-flex;
+    padding-left: 5px;
+    padding-top: 70px;
     text-decoration: none;
-    color: #fff;
-    background: #000;
-    padding: 12px 20px;
-    padding-bottom: 8px;
-    transition: 0.3s;
-}
-/*filter*/
-section{
-    padding: 100px 2px 5px;
-    width: 1000px;
-    margin: 20px 6px;
-}
-section ul{
-    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 123.52%;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding-left: 40px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 17px;
+    padding-left: 17px;
+    box-sizing: border-box;
+    width: 110px;
+    height: 36px;
+    left: 161px;
+    top: 421px;
+    background: #1E1E1E;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    margin-left: 6px;
     margin-bottom: 10px;
-    border-radius: 50px ;
+    margin-right: 0,5;
 }
-section ul li
-{
-    list-style: none;
-    background: #eee;
-    padding: 8px 30px;
-    margin: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 50px ;
-}
-section ul li.active{
-    background: #03a9f4;
-    color: #eee;
+.container > list{
+    display: inline-flex;
 }
 /*--search--*/
 .header-1{
@@ -137,12 +164,14 @@ section ul li.active{
     justify-content: flex-start;
     padding: 1rem 9%;
     border-radius: 50px ;
+    vertical-align: top;
 }
 .header-1 .search-box-container{
     margin-top: 100px;
     display: flex;
     height: 2rem;
     border-radius: 50px ;
+    vertical-align: top;
 }
 .header-1 .search-box-container #search-box{
     height: 100%;
@@ -152,6 +181,7 @@ section ul li.active{
     border: .1rem solid rgba(0, 0, 0, .3);
     text-transform: none;
     border-radius: 50px ;
+    vertical-align: top;
 }
 :root{
     --green:#27ae60;
