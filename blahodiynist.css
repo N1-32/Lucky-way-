@@ -1,75 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Marmelad', sans-serif;
+    background-color:  rgba(5, 40, 54, 1);
 }
-.logo{
-    font-family: 'EB Garamond', serif;
-    font-size: 3rem;
-    color: #fff;
-    user-select: none;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 99;
-}
-.about-col{
-    
-    color: #fff;
-    text-align: left;
-}
-.navigation .btnLogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-.navigation .btnLogin-popup:hover{
-    background: #fff;
-    color: #162938;
-}
-section{
-    padding: 40px;
-    padding: 20px 2px 5px;
-    width: 1000px;
-    margin: 20px 6px;
-}
-section ul{
+.container{
+    justify-content: space-between;
+    display:inline-flex;
     flex-wrap: wrap;
-    padding: 100px;
-    padding-left: 40px;
-    display: flex;
-    margin-bottom: 10px;
-    border-radius: 50px ;
+
 }
-section ul li
-{
+p{
+    position: absolute;
+    width: 120px;
+    height: 25px;
+    left: 540px;
+    margin: 1px;
     
-    border-radius: 50px ;
-    list-style: none;
-    background: #eee;
-    padding: 8px 30px;
-    margin: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 123.52%;
+   
+    
+    letter-spacing: 0.025em;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);                          
 }
-section ul li.active{
-    background: #fff;
-    color: black;
+.offer{
+    position: absolute;
+    width: 781px;
+    height: 1.07px;
+    left: 140px;
+    top: 20px;
+    padding-left: 50px;
+}
+.img{
+    position: absolute;
+    width: 1206px;
+    height: 55px;
+    left: -1px;
+    top: 2px;
+}
+.shadow{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+.navbar-wrap li{
+    position: absolute;
+    width: 122px;
+    height: 45px;
+    left: 30px;
+    top: 10px;
+    list-style-type: none;
+    
+}
+.icon{
+    padding-left: 970px;
+    width: 24px;
+    height: 24px;
+    
+}
+.navbar-wrap li p{
+    font-family: 'Cormorant SC', serif;
+    width: 96px;
+    font-size: 21px;
+    text-align: center;
+    left: 12px;
+    bottom: 7px;
+    
+}
+.navbar-wrap li a{
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    left: 1px;
+    top: 10px;
 }
