@@ -179,9 +179,10 @@ p{
     vertical-align: top;
 }
 .header-1 .search-box-container{
-    margin-top: 100px;
+    margin-top: 38px;
     display: flex;
     height: 2rem;
+    width: 20rem;
     border-radius: 50px ;
     vertical-align: top;
 }
