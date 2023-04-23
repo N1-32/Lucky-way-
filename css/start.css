@@ -196,7 +196,6 @@ p{
     vertical-align: top;
 }
 :root{
-    --green:#27ae60;
     --black:#2c2c54;
 }
 .placeholder .header-1 .search-box-container #search-box{
@@ -212,7 +211,6 @@ p{
     font-size: 2.5rem;
     line-height: 5rem;
     color: #fff;
-    background: var(--green);
     text-align: center;
     cursor: pointer;
     
