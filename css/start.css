@@ -90,7 +90,10 @@ p{
     display: block;
 }
 .card-img{
-    width: 160px;
+     padding-top: 1.1;
+    height: 181px;
+    width: 170px;
+    border-radius: 30px;
 }
 .card-title{
     font-weight: 400;
@@ -105,10 +108,21 @@ p{
     padding-left: 1px;
     padding-top: 7px;
     font-weight: 400;
-    font-size: 12px;  
+    font-size: 13px;  
     text-align: center;
     letter-spacing: 0.12em;
     color: #FFFFFF;
+}
+.card_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1E1E1E;
+    background: #fff;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 18px;
 }
 
 .wrapper{
