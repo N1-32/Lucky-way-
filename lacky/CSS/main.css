@@ -8,8 +8,8 @@ p{
     font-family: 'Cormorant SC', serif;
     border: 1px solid rgba(0, 0, 0, 0.01);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
-    width: 223px;
-    font-size: 85px;
+    width: 323px;
+    font-size: 99px;
     text-align: center;
 }
 .container{
@@ -18,8 +18,8 @@ p{
 
 }
 .offer img{
-    padding-left: 915px;
-    padding-top: 125px;
+    padding-left: 515px;
+    padding-top: 10px;
 }
 .offer{
     position: absolute;
@@ -31,7 +31,7 @@ p{
 .offer-wrapper{
     position: absolute;
     width: 323px;
-    height: 350px;
+    height: 299px;
     left: calc(50% - 323px/2 - 277.5px);
     bottom: 200px;
     color: #FFFFFF;
@@ -43,6 +43,7 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    padding-left: 40px;
     padding-top: 4px;
     padding-right: 80px;
     padding-left: 80px;
@@ -53,8 +54,8 @@ p{
     position: absolute;
     width: 272px;
     height: 53px;
-    left: 261px;
-    top: 550px;
+    left: 161px;
+    top: 421px;
     background: rgba(217, 217, 217, 0.16);
     border: 2px solid #FFFFFF;
     box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.57);
@@ -94,3 +95,9 @@ p{
     text-decoration: none;
     color: #ffffff;
 }
+
+.icon{
+    padding-left: 200px;
+
+}
+

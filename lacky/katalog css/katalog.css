@@ -7,7 +7,6 @@ body{
 .container{
     justify-content: space-between;
     display:inline-flex;
-    flex-wrap: wrap;
 
 }
 p{
@@ -88,12 +87,11 @@ p{
     width: 160px;
     height: 304px;
     display: block;
+    
+     
 }
 .card-img{
-     padding-top: 1.1;
-    height: 181px;
-    width: 170px;
-    border-radius: 30px;
+    width: 160px;
 }
 .card-title{
     font-weight: 400;
@@ -108,21 +106,10 @@ p{
     padding-left: 1px;
     padding-top: 7px;
     font-weight: 400;
-    font-size: 13px;  
+    font-size: 12px;  
     text-align: center;
     letter-spacing: 0.12em;
     color: #FFFFFF;
-}
-.card_btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #1E1E1E;
-    background: #fff;
-    padding: 10px;
-    transition: 0.3s;
-    border-radius: 18px;
 }
 
 .wrapper{
@@ -132,9 +119,6 @@ p{
     
     display: inline-flex;
     text-align: center;
-    text-align: center;
-    margin-top: 8px;
-    line-height: 21px;
 }
 
 .container{
@@ -144,12 +128,12 @@ p{
 }
 
 
-.list{
+.btn{
     color: aliceblue;
     width: 110px;
     display: inline-flex;
     padding-left: 5px;
-    padding-top: 70px;
+    padding-top: 2px;
     text-decoration: none;
  
     font-style: normal;
@@ -180,48 +164,6 @@ p{
     margin-bottom: 10px;
     margin-right: 0,5;
 }
-.container > list{
+.container > btn{
     display: inline-flex;
-}
-/*--search--*/
-.header-1{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem 9%;
-    border-radius: 50px ;
-    vertical-align: top;
-}
-.header-1 .search-box-container{
-    margin-top: 38px;
-    display: flex;
-    height: 2rem;
-    width: 20rem;
-    border-radius: 50px ;
-    vertical-align: top;
-}
-.header-1 .search-box-container #search-box{
-    height: 100%;
-    width: 100%;
-    padding: 17px;
-    color: #333;
-    border: .1rem solid rgba(0, 0, 0, .3);
-    text-transform: none;
-    border-radius: 50px ;
-    vertical-align: top;
-}
-:root{
-    --black:#2c2c54;
-}
-.placeholder .header-1 .search-box-container #search-box{
-    font-size: large;
-}
-.header-1 .search-box-container .span
-{
-    right: inherit;
-}
-
-.header-2 .btn-popup{
-    display: flex;
-    padding: 1rem;
 }
