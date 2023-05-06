@@ -18,7 +18,7 @@ p{
 
 }
 .offer img{
-    padding-left: 915px;
+    padding-left: 595px;
     padding-top: 125px;
 }
 .offer{
@@ -26,12 +26,14 @@ p{
     width: 594,5px;
     height: 470px;
     left: 56px;
-    top: 67px;
+    top: 97px;
 }
 .offer-wrapper{
     position: absolute;
-    width: 323px;
-    height: 350px;
+    width: 393px;
+    padding-bottom: 1cm;
+    left: 4cm;
+    height: 450px;
     left: calc(50% - 323px/2 - 277.5px);
     bottom: 200px;
     color: #FFFFFF;
@@ -42,7 +44,7 @@ p{
     list-style-type: none;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 35px;
     padding-top: 4px;
     padding-right: 80px;
     padding-left: 80px;
@@ -53,8 +55,8 @@ p{
     position: absolute;
     width: 272px;
     height: 53px;
-    left: 261px;
-    top: 550px;
+    left: 361px;
+    top: 670px;
     background: rgba(217, 217, 217, 0.16);
     border: 2px solid #FFFFFF;
     box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.57);
@@ -82,7 +84,7 @@ p{
 }
 
 .navbar-wrap{
-    padding-left: 350px;
+    padding-left: 650px;
     height: inherit;
     display: flex;
     justify-content: space-between;
