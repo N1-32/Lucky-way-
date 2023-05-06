@@ -1,6 +1,6 @@
-const json_restaurants_path = "http://localhost/json/restaurant-T1.json";
-const json_menu_path = "http://localhost/json/menu-T2.json";
-const json_category_path = "http://localhost/json/category-T3.json";
+const json_restaurants_path = "json/restaurant-T1.json";
+const json_menu_path = "json/menu-T2.json";
+const json_category_path = "json/category-T3.json";
 console.log("Loading data, please wait...");
 
 fetchJSONFile(json_restaurants_path, function(data)
