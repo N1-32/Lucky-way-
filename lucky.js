@@ -7,19 +7,21 @@ fetchJSONFile(json_restaurants_path, function(data)
     {
         console.log(data)
         window.restaurants = data;
-        console.log("Data loaded!");
+        console.log("Restaurants loaded!");
+        drawRestaurants(window.restaurants);
     });
 fetchJSONFile(json_menu_path, function(data)
     {
         console.log(data)
         window.menu = data;
-        console.log("Data loaded!");
+        console.log("Menu loaded!");
     });
 fetchJSONFile(json_category_path, function(data)
     {
         console.log(data)
-        window.category = data;
-        console.log("Data loaded!");
+        window.categories = data;
+        console.log("Categories loaded!");
+        drawCategoryFilters();
     });
 
 function fetchJSONFile(path, callback) {
@@ -79,41 +81,6 @@ function searchRestaurants(){
    console.log(result);
    return result;
 }
-window.categories = [
-    {
-        "id" : "1",
-        "name" : "Десерт"
-    },
-    {
-        "id" : "2",
-        "name" : "Грузинська кухня"
-    },
-    {
-        "id" : "3",
-        "name" : "Українська кухня"
-    },
-    {
-        "id" : "4",
-        "name" : "Італійська кухня"
-    },
-    {
-        "id" : "5",
-        "name" : "Веганьська кухня"
-    },
-    {
-        "id" : "6",
-        "name" : "Європейська кухня"
-    },
-    {
-        "id" : "7",
-        "name" : "Японська кухня"
-    },
-    {
-        "id" : "8",
-        "name" : "Американська кухня"
-    }
-];
-drawCategoryFilters();
 function drawCategoryFilters() {
         let items = [];
         for(let i = 0; i < window.categories.length; i++){
@@ -124,7 +91,7 @@ function drawCategoryFilters() {
             items[i] = 
             '<li class="'+classes+
           '" data-category="'+category+
-          '" onclick="filterRestaurantByCategoryId(this)">'+categoryName+
+          '" onclick="drawRestaurants(filterRestaurantByCategoryId(this))">'+categoryName+
           '</li>';
     }
     
@@ -162,7 +129,7 @@ function searchRestaurants(){
         result = getRestaurantByCategoryId(window.filterCategoryId);
     }
 
-    if(!searchString){
+    if(isEmptyOrSpaces(searchString)){
         console.log(result);
         return result;
     }
@@ -173,4 +140,8 @@ function searchRestaurants(){
 
    console.log(result);
    return result;
+}
+
+function isEmptyOrSpaces(str){
+    return str === null || str.match(/^ *$/) !== null;
 }

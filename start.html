@@ -32,17 +32,17 @@
     
         <header1>
             <div class="header-1">
-                <form action="" class="search-box-container">
-                <input type="search" id="search-box" placeholder="Шукай тут...">
-                <span class="material-symbols-outlined">
+                <div class="search-box-container">
+                    <input type="search" id="search-box" placeholder="Шукай тут..." onfocus="this.value=''; this.oninput()" oninput="drawRestaurants(searchRestaurants())">
+                    <span class="material-symbols-outlined">
                     </span>
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
+                    <label for="search-box" class="fas fa-search"></label>
+                </div>
             </div>
          </header1>
         <section>
             <ul id="category-filter">
-                <li class="list" data-filter="Все">Все</li>
+                <li class="list active" data-filter="Все" onclick="drawRestaurants(filterRestaurantByCategoryId(this))">Все</li>
             </ul>
          </section>
        

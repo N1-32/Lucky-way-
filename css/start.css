@@ -151,7 +151,9 @@ p{
     margin-right: 150px;
 }
 
-
+.list.active{
+    background: #203675;
+}
 .list{
     color: aliceblue;
     width: 110px;
