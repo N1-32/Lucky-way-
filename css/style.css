@@ -38,6 +38,13 @@ p{
     bottom: 200px;
     color: #FFFFFF;
 }
+.offer-wrapper p{
+    position: absolute;
+    width: 393px;
+    padding-bottom: 1cm;
+    top: 250px;
+    right: 280px;
+}
 .btn{
     color: aliceblue;
     text-decoration: none;
