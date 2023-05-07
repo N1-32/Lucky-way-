@@ -9,7 +9,7 @@ p{
     border: 1px solid rgba(0, 0, 0, 0.01);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
     width: 223px;
-    font-size: 85px;
+    font-size: 79px;
     text-align: center;
 }
 .container{
@@ -98,7 +98,7 @@ p{
 }
 .navbar-wrap .btn{
     top: 550px;
-    bottom: 5cm;
+    bottom: 10cm;
 }
 .icon{
     padding-left: 200px;
