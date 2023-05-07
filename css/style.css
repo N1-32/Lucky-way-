@@ -96,3 +96,11 @@ p{
     text-decoration: none;
     color: #ffffff;
 }
+.navbar-wrap .btn{
+    top: 650px;
+    bottom: 5cm;
+}
+.icon{
+    padding-left: 200px;
+
+}
