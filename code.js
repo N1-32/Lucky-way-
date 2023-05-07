@@ -1,7 +1,7 @@
 // функція відображення ресторанів
 function drawRestaurants(restaurants)
 {
-	let t = document.getElementById('p');
+	
 	var mainContainer = document.querySelector('.container');
     	
     // очищення головного контейнеру
@@ -53,9 +53,7 @@ function drawRestaurants(restaurants)
 
 function getGeooloc(){
 let d1 = document.querySelectorAll('.wrapper')
-d1.forEach(function(d1) {
-	d1.remove();
-  });
+
 
  
 let unit = "metres";
@@ -74,11 +72,13 @@ function getDistanceBetweenPoints(lat1, lon1, lat2, lon2, unit = 'miles') {
   
 let t = document.getElementById('p');
 let distances = [];
-	if(navigator.geolocation ){
-			navigator.geolocation.getCurrentPosition(Position); }
-			else{
-			  t = documet.getElementById('p').innerHTML = " error ";
-			}
+	let errorMessage = "Your geolocation is not available";
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(Position);
+} else {
+   
+    alert(errorMessage);
+}
 function compareByDST(a, b) {
 	if (a.dst < b.dst) {
 	  return -1;
@@ -90,6 +90,9 @@ function compareByDST(a, b) {
   }
 
 function Position(positon){
+	d1.forEach(function(d1) {
+	d1.remove();
+  });
 	let lon2= positon.coords.longitude;
 	let lat2 = positon.coords.latitude;
 	for(let i=0 ; i<restaurants.length; i++){
