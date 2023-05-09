@@ -25,9 +25,9 @@
             </ul>
     </div>
     <header-2>
-        <div class="header-2" onclick="getGeooloc(searchRestaurants())">
-            <a1 class="icon" href="#"><img src="images/Component 21.png"></a1></li>
-            <a class="icon" href="#"><img src="images/Поблизу.png"></a></li>
+        <div class="header-2">
+            <a1 class="icon" onclick="getGeooloc(searchRestaurants())" style="cursor:pointer"><img src="images/Component 21.png"></a1></li>
+            <a class="icon" onclick="getGeooloc(searchRestaurants())" style="cursor:pointer"><img src="images/Поблизу.png"></a></li>
         </div> 
         </header-2>
     
@@ -43,7 +43,7 @@
          </header1>
         <section>
             <ul id="category-filter">
-                <li class="list active" data-filter="Все" onclick="drawRestaurants(filterRestaurantByCategoryId(this))">Все</li>
+                <li class="list active" data-filter="Все" onclick="drawRestaurants(filterRestaurantByCategoryId(this))" style="cursor:pointer">Все</li>
             </ul>
          </section>
        

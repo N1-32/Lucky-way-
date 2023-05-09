@@ -91,7 +91,7 @@ function drawCategoryFilters() {
             items[i] = 
             '<li class="'+classes+
           '" data-category="'+category+
-          '" onclick="drawRestaurants(filterRestaurantByCategoryId(this))">'+categoryName+
+          '" onclick="drawRestaurants(filterRestaurantByCategoryId(this))" style="cursor:pointer">'+categoryName+
           '</li>';
     }
     
