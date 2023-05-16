@@ -232,6 +232,9 @@ p{
 }
 .lines{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 400px;
 }
 .centr{
     position: fixed;
