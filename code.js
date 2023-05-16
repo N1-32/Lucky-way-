@@ -38,7 +38,7 @@ function drawRestaurants(restaurants)
     	// кнопка перейти
     	var link = document.createElement('a');
     	link.classList.add('card_btn');
-    	link.href = "#";
+    	link.href = "меню/menu.html";
     	link.textContent = "Перейти";
     	newContainer.appendChild(link);
 
