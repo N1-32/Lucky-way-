@@ -8,9 +8,7 @@
 		"location" :{ "latitude": 49.8399247 ,
 			"longitude": 24.0263229 },
 		"chedule" : "10:00-00:00",
-		"website" : "https://www.gazdagroup.com.ua/",
-		
-	},
+		"website" : "https://www.gazdagroup.com.ua/"},
 	{
 		"id" : 2,
 		"category_id" : "8",
