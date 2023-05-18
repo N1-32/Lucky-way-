@@ -30,7 +30,7 @@ var line1 = document.createElement('img');
 //адреса
  var location = document.createElement('div');
 location.classList.add('location');
-location.innerHTML = 'пр. Свободи, 19. <br> 1 км 500 м';
+location.textContent = 'пр. Свободи, 19. <br> 1 км 500 м';
 //додавання лінії
 var line2 = document.createElement('img');
 line2.classList.add('line');
