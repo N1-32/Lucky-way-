@@ -5,7 +5,7 @@ for(let i=0; i<restaurants.length; i++){
 	var mainContaner = document.querySelector('.container');
    
 	var container = document.createElement('div');
-	container.classList.add('wrapper');
+	container.classList.add('wrapper'); 
    
 	var card = document.createElement('div');
 	card.classList.add('card');
