@@ -42,7 +42,8 @@ p{
     position:absolute ;
     width: 393px;
     padding-bottom: 1cm;
-    top: 125px;
+    top: 100px;
+    right: 140px;
 }
 .btn{
     color: aliceblue;
