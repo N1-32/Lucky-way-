@@ -39,10 +39,10 @@ p{
     color: #FFFFFF;
 }
 .offer-wrapper p{
-    position: static;
+    position:absolute ;
     width: 393px;
     padding-bottom: 1cm;
-    top: 140px;
+    top: 125px;
 }
 .btn{
     color: aliceblue;
