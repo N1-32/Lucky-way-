@@ -39,7 +39,7 @@ p{
     color: #FFFFFF;
 }
 .offer-wrapper p{
-    position: absolute;
+    position: static;
     width: 393px;
     padding-bottom: 1cm;
     top: 140px;
